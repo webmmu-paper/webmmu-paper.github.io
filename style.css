@@ -1022,4 +1022,16 @@ html {
 }
 .dataset-summary-table tbody tr:last-child td {
   border-bottom: none;
+}
+
+.bibtex-block {
+  background: #f8fafc;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+  font-size: 1.01rem;
+  padding: 1.1rem 1.2rem;
+  border-radius: 10px;
+  margin: 1.2rem 0 0.5rem 0;
+  overflow-x: auto;
+  color: #23272f;
+  line-height: 1.6;
 } 
