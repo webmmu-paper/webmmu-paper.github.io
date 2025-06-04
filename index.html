@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebMMU: Multimodal Multilingual Website Understanding</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="main-nav sticky">
+    <div class="container nav-content">
+      <div class="nav-left">
+        <a href="#" class="nav-logo">WebMMU</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#dataset">Dataset</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#tasks">Tasks</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+      </div>
+      <div class="nav-actions">
+        <a href="assets/WebMMU_2025.pdf" target="_blank" class="nav-btn nav-paper">Paper</a>
+        <a href="https://webmmu.github.io" target="_blank" class="nav-btn nav-github" aria-label="GitHub Repository">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.687-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.7 1.028 1.594 1.028 2.687 0 3.847-2.338 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.579.688.481C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2Z" fill="#23272f"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <section class="hero hero-merged">
+      <div class="container hero-center hero-flex-merged">
+        <div class="hero-visuals">
+          <img src="assets/webmmu_thumb_25.png" alt="WebMMU Logo" class="logo hero-logo hero-image-large" />
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title">WebMMU</h1>
+          <p class="tagline">A Multimodal, Multilingual Benchmark for Website Understanding & Code Generation</p>
+          <p class="authors">Rabiul Awal, Mahsa Massoud, Zichao Li, Aarash Feizi, Suyuchen Wang, Christopher Pal, Aishwarya Agrawal, David Vazquez, Siva Reddy, Juan A. Rodriguez, Perouz Taslakian, Spandana Gella, Sai Rajeswar</p>
+          <p class="affiliations">ServiceNow, Mila, Université de Montréal, McGill University, École de Technologie Supérieure (ETS), Polytechnique Montréal</p>
+          <a class="cta hero-cta" href="#resources">Get the Dataset & Code</a>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section id="about" class="paper-card">
+      <h2>What is WebMMU?</h2>
+      <p class="about-desc">WebMMU is a comprehensive benchmark designed to push the boundaries of AI for the web. It challenges models to answer questions about websites, edit real HTML/CSS/JS code, and generate web layouts from mockups—across four languages and 20+ domains. Whether you're building smarter web agents or testing the limits of multimodal models, WebMMU is your go-to testbed.</p>
+      <img src="assets/WebMMU - main.png" alt="WebMMU Main" class="about-image-large" />
+      <h2 class="features-heading">Key Features</h2>
+      <ul class="features-list">
+        <li>🌐 <strong>Multilingual:</strong> English, Spanish, German, French</li>
+        <li>🧩 <strong>Three Core Tasks:</strong> WebQA, Code Editing, Mockup2Code</li>
+        <li>🖥️ <strong>Real-World Data:</strong> 20+ website domains, dynamic layouts</li>
+        <li>🔍 <strong>Fine-Grained Evaluation:</strong> Reasoning, UI understanding, and code generation</li>
+        <li>🤝 <strong>Open & Human-Annotated:</strong> Expert-verified, high-quality samples</li>
+      </ul>
+    </section>
+    <section id="dataset" class="paper-card">
+      <h2>Dataset Overview</h2>
+      <p><strong>WebMMU</strong> is a large-scale, multilingual benchmark for evaluating web understanding and code generation. It covers real-world websites across 20+ domains and four languages, with expert-verified annotations for three core tasks: WebQA, Mockup2Code, and Code Editing.</p>
+      <ul class="dataset-key-props">
+        <li>Languages: English, Spanish, German, French</li>
+        <li>Domains: Shopping, booking, sports, technology, and more</li>
+        <li>Tasks: WebQA (visual question answering), Mockup2Code (design-to-code), Code Editing (HTML/CSS/JS edits)</li>
+        <li>Annotations: Human-verified, high-quality, multi-step reasoning and UI understanding</li>
+        <li>Data: Full-page screenshots, HTML, and assets</li>
+      </ul>
+      <table class="dataset-summary-table">
+        <thead>
+          <tr><th></th><th>En</th><th>Es</th><th>De</th><th>Fr</th><th>Total</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Website Images</td><td>392</td><td>133</td><td>130</td><td>131</td><td>786</td></tr>
+          <tr><td>WebQA</td><td>1476</td><td>484</td><td>379</td><td>456</td><td>2795</td></tr>
+          <tr><td>Mockup2Code</td><td>180</td><td>93</td><td>85</td><td>78</td><td>436</td></tr>
+          <tr><td>Code Editing</td><td>165</td><td>75</td><td>67</td><td>68</td><td>375</td></tr>
+          <tr><td><strong>Total</strong></td><td>2213</td><td>785</td><td>661</td><td>733</td><td>4392</td></tr>
+        </tbody>
+      </table>
+      <div class="visual-placeholder">[Infographic or dataset chart here]</div>
+      <div class="dataset-access">Access: <a href="https://webmmu.github.io" target="_blank">Dataset & Code on GitHub</a></div>
+    </section>
+    <section id="bibtex" class="paper-card">
+      <h2>Cite WebMMU (BibTeX)</h2>
+      <pre class="bibtex-block"><code>@inproceedings{awal2025webmmu,
+  title={WebMMU: A benchmark for multimodal multilingual website understanding and code generation},
+  author={Awal, Rabiul and Massoud, Mahsa and Li, Zichao and Feizi, Aarash and Wang, Suyuchen and Pal, Christopher and Agrawal, Aishwarya and Vazquez, David and Reddy, Siva and Rodriguez, Juan A and others},
+  booktitle={ICLR 2025 Third Workshop on Deep Learning for Code},
+  year={2025}
+}</code></pre>
+    <section id="tasks" class="paper-card tasks-cards">
+      <h2>What Can You Do with WebMMU?</h2>
+      <div class="task-card-grid">
+        <div class="task-card">
+          <div class="task-icon">
+            <!-- Eye icon for WebQA -->
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="19" cy="19" r="18" fill="#1a237e"/><ellipse cx="19" cy="19" rx="10" ry="6" fill="#fff"/><circle cx="19" cy="19" r="3" fill="#2563eb"/></svg>
+          </div>
+          <h3>WebQA</h3>
+          <p>Answer questions about real website screenshots—test your model's ability to reason, ground, and understand UI elements and content.</p>
+          <div class="task-visual">
+            <svg width="100%" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="10" width="100" height="40" rx="6" fill="#e3e8f0"/><rect x="20" y="20" width="80" height="8" rx="2" fill="#2563eb"/><rect x="20" y="32" width="60" height="6" rx="2" fill="#a31f34"/><circle cx="100" cy="35" r="4" fill="#fff" stroke="#2563eb" stroke-width="1.5"/></svg>
+          </div>
+        </div>
+        <div class="task-card">
+          <div class="task-icon">
+            <!-- Layout/code icon for Mockup2Code -->
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="10" width="28" height="18" rx="4" fill="#a31f34"/><rect x="9" y="14" width="20" height="4" rx="2" fill="#fff"/><rect x="9" y="20" width="8" height="2" rx="1" fill="#2563eb"/><rect x="19" y="20" width="10" height="2" rx="1" fill="#e3e8f0"/></svg>
+          </div>
+          <h3>Mockup2Code</h3>
+          <p>Turn hand-drawn or digital mockups into working HTML/CSS code. Evaluate how well your model translates design into code.</p>
+          <div class="task-visual">
+            <svg width="100%" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="12" width="90" height="36" rx="7" fill="#fff" stroke="#a31f34" stroke-width="2"/><rect x="30" y="22" width="60" height="6" rx="2" fill="#e3e8f0"/><rect x="30" y="32" width="40" height="6" rx="2" fill="#2563eb"/><rect x="75" y="32" width="10" height="6" rx="2" fill="#a31f34"/></svg>
+          </div>
+        </div>
+        <div class="task-card">
+          <div class="task-icon">
+            <!-- Pencil/edit icon for Code Editing -->
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="19" cy="19" r="18" fill="#2563eb"/><rect x="13" y="23" width="12" height="2" rx="1" fill="#fff"/><path d="M24 14l-7 7" stroke="#fff" stroke-width="2" stroke-linecap="round"/><rect x="21.5" y="12.5" width="4" height="2" rx="1" transform="rotate(45 21.5 12.5)" fill="#a31f34"/></svg>
+          </div>
+          <h3>Code Editing</h3>
+          <p>Edit real website code based on user instructions. Can your model make precise, functional changes to HTML, CSS, or JS?</p>
+          <div class="task-visual">
+            <svg width="100%" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="18" y="15" width="84" height="30" rx="5" fill="#f8fafc" stroke="#2563eb" stroke-width="2"/><rect x="30" y="25" width="60" height="6" rx="2" fill="#a31f34"/><rect x="30" y="35" width="30" height="6" rx="2" fill="#2563eb"/><rect x="65" y="35" width="20" height="6" rx="2" fill="#e3e8f0"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="results" class="paper-card">
+      <h2>Results</h2>
+      <div class="results-tabs">
+        <button class="results-tab active" data-tab="webqa">WebQA</button>
+        <button class="results-tab" data-tab="mockup2code">Mockup2Code</button>
+        <button class="results-tab" data-tab="codeedit">Code Editing</button>
+      </div>
+      <div class="results-tab-content" id="results-webqa" style="display:block;">
+        <h3 class="results-table-headline">Web VQA Performance</h3>
+        <p class="results-table-summary">Model accuracy (%) by question type and language. <span title="Reasoning">🧠</span> Reasoning, <span title="Functional">⚙️</span> Functional, <span title="Understanding">🔎</span> Understanding. Best and runner-up models per size category are <strong>bold</strong> and <span class="runner-up">underlined</span>. Model sizes: <span class="cat-blue">blue</span> (&lt;8B params), <span class="cat-orange">orange</span> (8–12B), <span class="cat-green">green</span> (&gt;12B), <span class="cat-gray">gray</span> proprietary.</p>
+        <div class="results-table-scroll">
+          <table class="results-table">
+            <thead>
+              <tr>
+                <th rowspan="2">Model</th>
+                <th colspan="3">English</th>
+                <th colspan="3">French</th>
+                <th colspan="3">German</th>
+                <th colspan="3">Spanish</th>
+              </tr>
+              <tr>
+                <th title="Reasoning">🧠</th>
+                <th title="Functional">⚙️</th>
+                <th title="Understanding">🔎</th>
+                <th title="Reasoning">🧠</th>
+                <th title="Functional">⚙️</th>
+                <th title="Understanding">🔎</th>
+                <th title="Reasoning">🧠</th>
+                <th title="Functional">⚙️</th>
+                <th title="Understanding">🔎</th>
+                <th title="Reasoning">🧠</th>
+                <th title="Functional">⚙️</th>
+                <th title="Understanding">🔎</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="cat-gray">
+                <td>Gemini2.0 Flash</td><td>44.3</td><td>1.2</td><td>59.2</td><td>41.6</td><td>9.0</td><td><strong>52.8</strong></td><td>18.2</td><td>12.8</td><td>29.1</td><td>46.1</td><td>12.0</td><td>36.1</td>
+              </tr>
+              <tr class="cat-gray">
+                <td>Claude3.5 Sonnet</td><td><strong>51.4</strong></td><td><strong>3.7</strong></td><td><strong>64.1</strong></td><td><strong>53.0</strong></td><td><strong>12.7</strong></td><td>51.2</td><td><strong>26.9</strong></td><td><strong>15.6</strong></td><td><strong>31.6</strong></td><td><strong>63.8</strong></td><td><strong>15.9</strong></td><td><strong>41.9</strong></td>
+              </tr>
+              <tr class="cat-blue">
+                <td>PhiThreeFiveVI</td><td>8.90</td><td>1.80</td><td>31.60</td><td>2.20</td><td>6.90</td><td>39.00</td><td class="runner-up">8.40</td><td>13.00</td><td>23.90</td><td>3.00</td><td>10.20</td><td>32.00</td>
+              </tr>
+              <tr class="cat-blue">
+                <td>UITARS</td><td><strong>19.30</strong></td><td><strong>8.10</strong></td><td class="runner-up">47.60</td><td>7.70</td><td>8.90</td><td class="runner-up">47.60</td><td>7.80</td><td>14.30</td><td class="runner-up">28.40</td><td><strong>20.90</strong></td><td><strong>14.00</strong></td><td><strong>38.80</strong></td>
+              </tr>
+              <tr class="cat-blue">
+                <td>MolmoSevenB</td><td>12.30</td><td class="runner-up">3.80</td><td>32.90</td><td>7.00</td><td>7.50</td><td>47.60</td><td>8.30</td><td>13.70</td><td><strong>31.90</strong></td><td>15.10</td><td>10.30</td><td>32.00</td>
+              </tr>
+              <tr class="cat-blue">
+                <td>QwenVLSevenB</td><td class="runner-up">18.00</td><td>2.90</td><td><strong>57.10</strong></td><td class="runner-up">10.10</td><td class="runner-up">10.20</td><td><strong>52.00</strong></td><td><strong>10.70</strong></td><td><strong>17.60</strong></td><td>26.30</td><td class="runner-up">19.30</td><td class="runner-up">14.00</td><td class="runner-up">36.50</td>
+              </tr>
+              <tr class="cat-blue">
+                <td>FuyuEightB</td><td>1.60</td><td>0.40</td><td>14.30</td><td>0.00</td><td>1.30</td><td>17.50</td><td>1.00</td><td>5.60</td><td>15.70</td><td>0.70</td><td>1.50</td><td>10.90</td>
+              </tr>
+              <tr class="cat-blue">
+                <td>InternVLTwoFiveEightB</td><td>16.30</td><td>1.90</td><td>46.30</td><td><strong>11.00</strong></td><td><strong>13.30</strong></td><td>40.00</td><td>7.40</td><td class="runner-up">16.00</td><td>25.90</td><td>13.80</td><td>11.90</td><td>31.10</td>
+              </tr>
+              <tr class="cat-orange">
+                <td>GlmFourVNineB</td><td>15.30</td><td class="runner-up">8.10</td><td>41.80</td><td>11.40</td><td><strong>13.90</strong></td><td class="runner-up">48.10</td><td class="runner-up">14.70</td><td>13.80</td><td class="runner-up">25.00</td><td class="runner-up">21.60</td><td class="runner-up">13.40</td><td>35.60</td>
+              </tr>
+              <tr class="cat-orange">
+                <td>LlamaThreeVision</td><td><strong>27.10</strong></td><td>7.90</td><td><strong>53.20</strong></td><td class="runner-up">11.60</td><td class="runner-up">11.30</td><td>48.10</td><td>11.80</td><td class="runner-up">14.30</td><td><strong>33.60</strong></td><td>17.50</td><td>11.80</td><td class="runner-up">37.90</td>
+              </tr>
+              <tr class="cat-orange">
+                <td>PixtralTwelveB</td><td class="runner-up">27.10</td><td><strong>9.20</strong></td><td class="runner-up">44.90</td><td><strong>17.70</strong></td><td>11.30</td><td><strong>53.40</strong></td><td><strong>19.50</strong></td><td><strong>19.30</strong></td><td>21.70</td><td><strong>28.70</strong></td><td><strong>17.80</strong></td><td><strong>40.20</strong></td>
+              </tr>
+              <tr class="cat-green">
+                <td>InternVLTwoFiveThirtyEightB</td><td class="runner-up">22.90</td><td class="runner-up">3.80</td><td><strong>59.30</strong></td><td><strong>20.90</strong></td><td><strong>15.30</strong></td><td><strong>65.70</strong></td><td><strong>18.00</strong></td><td><strong>20.10</strong></td><td><strong>39.70</strong></td><td><strong>36.20</strong></td><td><strong>14.90</strong></td><td><strong>41.40</strong></td>
+              </tr>
+              <tr class="cat-green">
+                <td>QwenVLSeventyTwoB</td><td><strong>23.60</strong></td><td><strong>4.30</strong></td><td class="runner-up">53.70</td><td class="runner-up">16.90</td><td class="runner-up">13.90</td><td class="runner-up">54.50</td><td class="runner-up">15.30</td><td class="runner-up">17.50</td><td class="runner-up">36.20</td><td class="runner-up">29.10</td><td class="runner-up">12.70</td><td class="runner-up">41.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="results-table-legend">
+          <span class="cat-blue"></span> <span>Open models &lt;8B</span>
+          <span class="cat-orange"></span> <span>Open models 8–12B</span>
+          <span class="cat-green"></span> <span>Open models &gt;12B</span>
+          <span class="cat-gray"></span> <span>Proprietary</span>
+          <span class="runner-up">Underlined</span> = runner-up, <strong>Bold</strong> = best in category
+          <span title="Reasoning">🧠</span> Reasoning, <span title="Functional">⚙️</span> Functional, <span title="Understanding">🔎</span> Understanding
+        </div>
+      </div>
+      <div class="results-tab-content" id="results-mockup2code" style="display:none;">
+        <h3>Mockup2Code Results</h3>
+        <img src="assets/mockup2sketch_results.png" alt="Mockup2Code Results" class="results-image results-image-large" />
+      </div>
+      <div class="results-tab-content" id="results-codeedit" style="display:none;">
+        <h3>Code Editing Results</h3>
+        <img src="assets/code-edits-performance.png" alt="Code Editing Results" class="results-image results-image-large" />
+      </div>
+    </section>
+    <section id="resources" class="paper-card">
+      <h2>Get Involved</h2>
+      <ul class="resources-list">
+        <li><a href="https://webmmu.github.io" target="_blank">Dataset & Code on GitHub</a></li>
+        <li><a href="mailto:contact@webmmu.org">Contact the Team</a></li>
+      </ul>
+      <div class="social-badges">[GitHub stars, Twitter, etc. badges here]</div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 WebMMU Benchmark. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+  // Smooth scroll for nav links
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.main-nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
+        }
+      });
+    });
+    // Existing results tab switcher
+    const tabs = document.querySelectorAll('.results-tab');
+    const contents = document.querySelectorAll('.results-tab-content');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        tabs.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        contents.forEach(c => c.style.display = 'none');
+        document.getElementById('results-' + this.dataset.tab).style.display = 'block';
+      });
+    });
+  });
+  </script>
+</body>
+</html>
