@@ -1,0 +1,15 @@
+Question 1: How can I find more information about the player A.J. Dybantsa?
+Answer: Click on the "RIVALS150 ranking" at the lower left and select "A.J. Dybantsa" at (x1:230.34, x2:297.32, y1:1049.92, y2:1083.07)
+
+Question 2: How many players are visible in the 4th image on the left side?
+A) 2 
+B) 1 
+C) 4 
+D) 3
+Answer: D) 3
+
+Question 3: Which user pays less when subscribing annually vs. monthly?
+Answer: 
+- Yearly: $99.95
+- Monthly: $9.95 × 12 = $119.40
+- Savings: $19.45

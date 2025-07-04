@@ -1,0 +1,12 @@
+Question 1: ¿En qué área puede el usuario hacer clic para ver publicaciones anteriores?
+A) Categorías 
+B) Lo más visto 
+C) Archivo del blog
+Answer: C) Archivo del blog
+
+Question 2: ¿A qué tipo de público está dirigido este blog de recetas?
+Answer: Personas interesadas en repostería y cocina casera
+
+Question 3: ¿Cuál sería el efecto en la navegación si la sección "Lo más visto recientemente" estuviera al inicio?
+Answer: Aumentaría la accesibilidad de los artículos populares
+        \newline \midrule

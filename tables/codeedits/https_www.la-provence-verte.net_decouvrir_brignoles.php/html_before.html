@@ -1,0 +1,224 @@
+<html>
+
+<head>
+	<title>Brignoles : Visitez ce village typique de La Provence Verte</title>
+	<meta charset="utf-8" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta
+		content="Quittez la frénésie de la N7 pour embrasser les collines panoramiques qui, il y a peu encore, fournissaient notre industrie de bauxite ; parcourez la vieille ville et, de porte bourgeoise en palais comtal, revivez les riches heures des Comtes de Provence."
+		name="description" />
+	<meta
+		content="Provence,Var,tourisme,location,hotel,hôtels,restaurant,chambre hôtes,tourisme provence,location provence,Séjour,Nature,Randonnée,Patrimoine,Eau,Office de Tourisme,Visite,Voyage,Manifestations,Réservation de séjours,Village,Jardin,Terroir,Verdon"
+		name="keywords" />
+	<script async="" src="//static.axept.io/sdk.js"></script>
+	<script async="" src="https://www.google.com/cse/cse.js?cx=015522873615270426124:j1y3o-ijwwa"
+		type="text/javascript"></script>
+	<script>
+		preload = new Image();
+		preload.src = 'https://www.la-provence-verte.net/decouvrir/villages/photos-villages/3/01.jpg';
+	</script>
+	<!-- Facebook Meta -->
+	<meta content="https://www.la-provence-verte.net/decouvrir/brignoles.php" property="og:url" />
+	<meta content="website" property="og:type" />
+	<meta content="Brignoles" property="og:title" />
+	<meta content="" property="og:description" />
+	<meta content="https://www.la-provence-verte.net/decouvrir/villages/photos-villages/3/01.jpg" property="og:image" />
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/yamm.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/slick.css" rel="stylesheet" type="text/css" />
+	<link href="css/slick-theme.css" rel="stylesheet" type="text/css" />
+	<style>
+		a.incontSlide:hover,
+		a.incontSlide:hover>p {
+			background-color: #dfdcd6;
+			text-decoration: none;
+			color: #5f5131;
+		}
+
+		.imageheader {
+			background: #9eae93 url('../assets/img/home-vacances-provence-verdon/background-automne.png') no-repeat center top;
+			-webkit-box-shadow: 5px 2px 2px rgba(0, 0, 0, 0);
+			box-shadow: 5px 2px 2px rgba(0, 0, 0, 0);
+		}
+	</style>
+	<!--<link href="../assets/dist/weather/css/weather.css" rel="stylesheet">-->
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link crossorigin="" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+		rel="stylesheet" />
+	<script crossorigin=""
+		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+		src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+	<script src="js/leaflet-omnivore.min.js"></script>
+	<script src="js/mapOSM.js"></script>
+	<!-- Google tag (gtag.js) -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3M75TD39HD"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-3M75TD39HD');
+	</script>
+</head>
+
+<body onload="initialize()" style="">
+	<div class="container">
+		<div class="yamm navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="row visible-md visible-lg"
+				style="background: url('../assets/img/menu/background-top.png') repeat-x center top;">
+				<div class="col-xs-12">
+					<div style="width:0px;overflow:hidden;height:0px;">
+						<gcse:search></gcse:search>
+					</div>
+					<form action="../accueil/recherche.php" class="form-inline pull-right"
+						id="searchbox_015522873615270426124:j1y3o-ijwwa">
+						<div class="form-group"><a class="btn btn-default input-sm"
+								href="../accueil/boutique-en-ligne.php" style="color: #BBBB18;"><span
+									class="glyphicon glyphicon-credit-card"></span> Boutique en ligne</a></div>
+						<div class="form-group">
+							<div class="btn-group">
+								<button aria-expanded="false" class="input-sm btn btn-default dropdown-toggle"
+									data-toggle="dropdown" type="button">
+									<span class="glyphicon glyphicon-list marginright10"></span><span class="caret"
+										style="color: #BBBB18;"></span>
+								</button>
+							</div>
+						</div>
+						<div class="form-group marginright10"><a class="btn btn-default input-sm"
+								href="../accueil/carte.php" style="color: #BBBB18;"><span
+									class="glyphicon glyphicon-map-marker"></span> Carte</a></div>
+						<div class="form-group marginleft20 marginright10">
+							<input class="input-sm form-control" id="q" name="q" style="width: 120px; height: 30px;"
+								type="text" />
+							<button class="input-sm btn btn-default"><span
+									class="glyphicon glyphicon-search"></span></button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand hidden-sm hidden-md" href="../" style="margin: 0 20px;"><img
+							src="assets/images/logo-pvv.png" style="margin-top: -34px;" /></a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="marginbottom30"></li>
+						<li class="active dropdown yamm-fw visible-md visible-lg">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Découvrir<b
+									class="caret"></b></a>
+						</li>
+						<li class="dropdown yamm-fw visible-lg visible-md">
+							<a class="dropdown-toggle menu-decouvrir" data-toggle="dropdown" href="#">DESTINATION<b
+									class="caret"></b></a>
+						</li>
+						<li class="dropdown yamm-fw visible-md visible-lg">
+							<a class="hidden-sm dropdown-toggle" data-toggle="dropdown" href="#">Préparer mon séjour<b
+									class="caret"></b></a>
+						</li>
+						<li class="dropdown yamm-fw visible-md visible-lg">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Agenda<span
+									class="hidden-sm hidden-md"> et Festivités</span><b class="caret"></b></a>
+						</li>
+						<li class="dropdown yamm-fw hidden-xs">
+							<a class="dropdown-toggle hidden-sm" data-toggle="dropdown" href="#">Où dormir, déguster,
+								s'amuser<b class="caret"></b></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container margintop0 marginbottom30">
+		<div class="row margintop40">
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+				<p class="legende">Cette belle et grande place aérée et ombragée, aux couleurs de façades patinées, est
+					un lieu agréable où il fait bon se retrouver à la terrasse des cafés. Le Centre Ancien est un
+					enchevêtrement de ruelles étroites débouchant sur des placettes. Les maisons ici sont chargées
+					d'histoire.</p>
+			</div>
+			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img alt="" class="img-responsive"
+					src="assets/images/07.jpg" /></div>
+			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"><img alt="" class="img-responsive"
+					src="assets/images/08.jpg" /></div>
+			<div class="hidden-xs col-sm-4 col-md-3 col-lg-3"><img alt="" class="img-responsive"
+					src="assets/images/09.jpg" /></div>
+		</div>
+		<h3>Les fêtes Médiévales</h3>
+		<p class="legende">Ces festivités, dont la réputation est de plus en plus grande (3ème festival des Arts de la
+			rue de France), animent, le temps du 3ème week-end du mois d'août, toute la ville. Artisans, vieux métiers,
+			saltimbanques, animaux de la ferme, fruits et légumes anciens etc...donnent une ambiance chaleureuse et bien
+			vivante de ce passé local.</p>
+		<div class="row">
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5"><img alt="" class="img-responsive"
+					src="assets/images/10.jpg" /></div>
+			<div class="hidden-xs col-sm-7 col-md-7 col-lg-7"><img alt="" class="img-responsive"
+					src="assets/images/11.jpg" /></div>
+		</div>
+		
+		<div class="pull-right margintop40"><a class="btn btn-success" href="http://ot-brignoles.provenceverte.fr"
+				target="_new">Site Internet Tourisme de Brignoles</a></div>
+	</div>
+	<div class="page-green margintop40 marginbottom30 hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Où dormir, déguster, s'amuser à Brignoles</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container hidden-xs">
+		<div class="row">
+			<div class="col-md-9">
+				<div class="row tab-content">
+					<div class="tab-pane active" id="voirfaire">
+						<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4">
+							<div class="annuaire-thumb-img"><a href="../accueil/documentation/pah/pah-4.pdf"
+									target="_new">
+									<img alt="" class="img-responsive" src="assets/images/doc-village-pah.jpg" /></a>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4">
+							<div class="annuaire-thumb-img"><a
+									href="../activites/baignade-brignoles-table-d-orientation-rocher-du-gueit_3289.html"><img
+										alt="" class="img-responsive" src="assets/images/photo3289_1.jpg" /></a></div>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4">
+							<div class="annuaire-thumb-img"><a
+									href="../activites/patrimoine-brignoles-coeur-historique_1602.html"><img alt=""
+										class="img-responsive" src="assets/images/photo1602_1.jpg" /></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 hidden-xs">
+				<div class="list-group">
+					<a class="list-group-item active" data-toggle="tab" href="#voirfaire" role="tab">
+						<span class="glyphicon glyphicon-heart"></span> A voir, à faire <span class="badge">19</span>
+					</a>
+					<a class="list-group-item" data-toggle="tab" href="#manger" role="tab">
+						<span class="glyphicon glyphicon-cutlery"></span> Restaurants <span class="badge">37</span>
+					</a>
+					<a class="list-group-item" data-toggle="tab" href="#dormir" role="tab">
+						<span class="glyphicon glyphicon-home"></span> Hébergements <span class="badge">40</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="btn_up" style="display: block;">
+		<h3><span class="glyphicon glyphicon-chevron-up"></span></h3>
+	</div>
+</body>
+
+</html>

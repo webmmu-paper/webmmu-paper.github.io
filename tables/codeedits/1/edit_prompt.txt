@@ -1,0 +1,1 @@
+Organize navigation links in the footer in order to help users easily find content by separating 'About Us,' 'Contact Us,' and the copyright section for better visibility

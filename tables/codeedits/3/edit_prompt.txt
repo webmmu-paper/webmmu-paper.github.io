@@ -1,0 +1,1 @@
+How can I fix the header element by adding a black overlay over the image, changing the font color to white, and setting the font family to "Lucida Sans"?

@@ -1,0 +1,1 @@
+For a visually appealing design, enhance the navbar with hover and shadow effects, add hover interactions to buttons and links, and apply a card effect to containers.

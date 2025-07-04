@@ -1,0 +1,8 @@
+Question 1: Comment filtrer les hôtels qui acceptent les animaux ?
+Answer: Dans la section "Ausstattung", cliquez sur "Haustiere erlaubt"
+
+Question 2: Combien de chaises sont visibles dans l'image de "Sunflower Santa Maria Novella" ?
+Answer: 4 chaises
+
+Question 3: Quelles sont les meilleures options d'hébergement près de Via Faenza ?
+Answer: "Sunflower Santa Maria Novella" avec une note de 8.9

@@ -1,0 +1,1 @@
+Mache die drei Felder „link-next“ auffälliger, indem du ihre Farbe, Größe oder Schriftstil anpasst.

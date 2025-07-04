@@ -1,0 +1,259 @@
+213a214,388
+>       <header
+>         id="header"
+>         role="banner"
+>         style="
+>           position: sticky;
+>           top: 0;
+>           z-index: 1000;
+>           background-color: #ffffff;
+>         "
+>       >
+>         <nav
+>           class="navbar navbar-expand-lg header-fixed"
+>           style="
+>             background-color: #ffffff;
+>             box-shadow: 0 1px 15px rgba(0, 0, 0, 0.4);
+>             margin: auto;
+>           "
+>         >
+>           <div class="container navbar-container">
+>             <a
+>               class="navbar-brand"
+>               href="/"
+>               style="
+>                 text-decoration: none;
+>                 color: inherit;
+>                 transition: color 0.3s ease;
+>               "
+>               onmouseover="this.style.color='#6610f2';"
+>               onmouseout="this.style.color='inherit';"
+>             >
+>               <img
+>                 alt="Fera Brand Logo"
+>                 class="brand-logo header-nav-brand-logo"
+>                 height="26"
+>                 src="https://uploads.fera.ai/brand/logo.svg"
+>                 width="83"
+>               />
+>             </a>
+>             <div
+>               class="collapse navbar-collapse"
+>               style="justify-content: center"
+>             >
+>               <ul class="navbar-nav">
+>                 <li class="nav-item dropdown features-dropdown">
+>                   <a
+>                     aria-expanded="false"
+>                     aria-haspopup="true"
+>                     class="nav-link"
+>                     data-toggle="dropdown"
+>                     href="/features"
+>                     id="featureNavItem"
+>                     role="button"
+>                     style="
+>                       text-decoration: none;
+>                       color: inherit;
+>                       transition: color 0.3s ease;
+>                     "
+>                     onmouseover="this.style.color='#6610f2';"
+>                     onmouseout="this.style.color='inherit';"
+>                   >
+>                     <span>Features</span>
+>                     <svg
+>                       class="fa-dropdownToggle"
+>                       data-icon="angle-down"
+>                       data-prefix="fal"
+>                       focusable="false"
+>                       height="18"
+>                       role="img"
+>                       viewbox="0 0 256 512"
+>                       xmlns="http://www.w3.org/2000/svg"
+>                     >
+>                       <path
+>                         d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"
+>                         fill="currentColor"
+>                       ></path>
+>                     </svg>
+>                   </a>
+>                 </li>
+>                 <li class="nav-item">
+>                   <a
+>                     class="nav-link"
+>                     href="/apps"
+>                     style="
+>                       text-decoration: none;
+>                       color: inherit;
+>                       transition: color 0.3s ease;
+>                     "
+>                     onmouseover="this.style.color='#6610f2';"
+>                     onmouseout="this.style.color='inherit';"
+>                   >
+>                     <span>Apps &amp; Integrations</span>
+>                   </a>
+>                 </li>
+>                 <li class="nav-item">
+>                   <a
+>                     class="nav-link"
+>                     href="/pricing"
+>                     style="
+>                       text-decoration: none;
+>                       color: inherit;
+>                       transition: color 0.3s ease;
+>                     "
+>                     onmouseover="this.style.color='#6610f2';"
+>                     onmouseout="this.style.color='inherit';"
+>                   >
+>                     <span>Pricing</span>
+>                   </a>
+>                 </li>
+>                 <li class="nav-item">
+>                   <a
+>                     class="nav-link active"
+>                     href="/blog"
+>                     style="
+>                       text-decoration: none;
+>                       color: inherit;
+>                       transition: color 0.3s ease;
+>                     "
+>                     onmouseover="this.style.color='#6610f2';"
+>                     onmouseout="this.style.color='inherit';"
+>                   >
+>                     <span>Blog</span>
+>                   </a>
+>                 </li>
+>               </ul>
+>             </div>
+>             <div class="header-nav-ctas">
+>               <span>
+>                 <div class="flex-column flex-lg-row cta-btns">
+>                   <div class="btn-rounded-border btn-rounded-border--gradient">
+>                     <a
+>                       class="btn btn-secondary"
+>                       href="https://app.fera.ai"
+>                       target=""
+>                       style="
+>                         text-decoration: none;
+>                         color: #6610f2;
+>                         transition: color 0.3s ease;
+>                       "
+>                       onmouseover="this.style.color='#6610f2';"
+>                       onmouseout="this.style.color='#6610f2';"
+>                     >
+>                       <span class="btn-gradient-text">Login</span>
+>                     </a>
+>                   </div>
+>                 </div>
+>               </span>
+>               <span>
+>                 <div class="flex-column flex-lg-row cta-btns">
+>                   <div class="btn-rounded-border">
+>                     <a
+>                       class="btn btn-primary signup-link"
+>                       href="https://app.fera.ai/signup"
+>                       target=""
+>                       style="
+>                         background-color: #6610f2;
+>                         color: #ffffff;
+>                         border: none;
+>                         padding: 10px 20px;
+>                         border-radius: 5px;
+>                         text-decoration: none;
+>                         transition: background-color 0.3s ease;
+>                       "
+>                       onmouseover="this.style.backgroundColor='#4b00c9';"
+>                       onmouseout="this.style.backgroundColor='#6610f2';"
+>                     >
+>                       Signup for Free
+>                     </a>
+>                   </div>
+>                 </div>
+>               </span>
+>             </div>
+>           </div>
+>         </nav>
+>       </header>
+>       
+242a418,429
+>                                 <a
+>                                   href="https://www.fera.ai/blog/posts/leverage-user-generated-content-boost-sales-examples/"
+>                                   style="
+>                                     color: #6610f2;
+>                                     text-decoration: none;
+>                                     transition: color 0.3s ease,
+>                                       text-decoration 0.3s ease;
+>                                   "
+>                                 >
+>                                   UGC increases their purchasing confidence.
+>                                 </a>
+>                                 
+265a453,498
+>                             <div class="cta-container">
+>                               <div
+>                                 class="text"
+>                                 style="
+>                                   padding: 20px;
+>                                   background-color: #ffffff;
+>                                   border-radius: 10px;
+>                                   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+>                                   margin: 20px;
+>                                   text-align: center;
+>                                   border: 1px solid #6610f2;
+>                                 "
+>                               >
+>                                 <h2
+>                                   style="
+>                                     margin-bottom: 10px;
+>                                     color: #6610f2;
+>                                     font: bold;
+>                                   "
+>                                 >
+>                                   Beautiful, simple reviews for your site
+>                                 </h2>
+>                                 Easily collect, show &amp; grow customer
+>                                 reviews, photos &amp; videos for your business.
+>                               </div>
+> 
+>                               <div class="cta-btn">
+>                                 <a
+>                                   class="btn btn-lg signup-link btn-primary"
+>                                   href="https://app.fera.ai/signup?utm_source=fera_blog&amp;utm_medium=review_statistics_sign_up_button&amp;utm_campaign=product_review_statistics_ecommerce_stores_need_them"
+>                                   style="
+>                                     background-color: #6610f2;
+>                                     color: #ffffff;
+>                                     padding: 10px 20px;
+>                                     border-radius: 5px;
+>                                     text-decoration: none;
+>                                     transition: background-color 0.3s ease;
+>                                   "
+>                                   onmouseover="this.style.backgroundColor='#4b00c9';"
+>                                   onmouseout="this.style.backgroundColor='#6610f2';"
+>                                 >
+>                                   Try Fera Reviews for Free
+>                                 </a>
+>                               </div>
+>                             </div>
+>                             
+267a501,504
+>                             <h2 id="Product_Reviews_Improve_SEO" style="margin-top: -30px; color: #6610f2; font: bold;">
+>                               Product Reviews Improve SEO
+>                             </h2>
+>                             
+279a517,533
+>                               
+>                               <img
+>                                 alt="Google Ratings Average Rating Badge"
+>                                 data-rel="225x255"
+>                                 height="528"
+>                                 src="assets/images/google-ratings-average-rating-badge.jpg"
+>                                 title="Google Ratings Average Rating Badge"
+>                                 width="600"
+>                                 style="
+>                                   display: block;
+>                                   margin: 20px auto;
+>                                   transition: transform 0.3s ease, cursor 0.3s;
+>                                   margin-left: 10px;
+>                                 "
+>                                 onmouseover="this.style.transform='scale(1.01)'; this.style.cursor='pointer';"
+>                                 onmouseout="this.style.transform='scale(1)';"
+>                               />

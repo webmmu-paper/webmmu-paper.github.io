@@ -1,0 +1,123 @@
+59a60,181
+> 	 
+> 		<style>
+> 		  /* Basic styling for the login form and navigation menu */
+> 		  body {
+> 			font-family: Arial, sans-serif;
+> 		  }
+> 		  
+> 		  #guest_form {
+> 			width: 300px;
+> 			margin: 20px auto;
+> 			padding: 20px;
+> 			border: 1px solid #ccc;
+> 			border-radius: 10px;
+> 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+> 		  }
+> 		  
+> 		  #guest_form label {
+> 			display: block;
+> 			margin-bottom: 10px;
+> 		  }
+> 		  
+> 		  #guest_form input[type="text"], #guest_form input[type="password"] {
+> 			width: 100%;
+> 			height: 40px;
+> 			margin-bottom: 20px;
+> 			padding: 10px;
+> 			border: 1px solid #ccc;
+> 		  }
+> 		  
+> 		  #guest_form select {
+> 			width: 100%;
+> 			height: 40px;
+> 			margin-bottom: 20px;
+> 			padding: 10px;
+> 			border: 1px solid #ccc;
+> 		  }
+> 		  
+> 		  #guest_form button[type="submit"] {
+> 			width: 100%;
+> 			height: 40px;
+> 			background-color: #4CAF50;
+> 			color: #fff;
+> 			padding: 10px;
+> 			border: none;
+> 			border-radius: 10px;
+> 			cursor: pointer;
+> 		  }
+> 		  
+> 		  #guest_form button[type="submit"]:hover {
+> 			background-color: #3e8e41;
+> 		  }
+> 		  
+> 		  #main_menu {
+> 			margin-top: 20px;
+> 		  }
+> 		  
+> 		  #main_menu ul {
+> 			list-style: none;
+> 			margin: 0;
+> 			padding: 0;
+> 			display: flex;
+> 			justify-content: space-between;
+> 		  }
+> 		  
+> 		  #main_menu li {
+> 			margin-right: 20px;
+> 		  }
+> 		  
+> 		  #main_menu a {
+> 			text-decoration: none;
+> 			color: #337ab7;
+> 		  }
+> 		  
+> 		  #main_menu a:hover {
+> 			color: #23527c;
+> 		  }
+> 		</style>
+> 		
+> 		<div>
+> 		  <form id="guest_form" accept-charset="UTF-8" action="http://forum.linuxmce.org/index.php?action=login2" method="post">
+> 			<div class="info">
+> 			  <p id="login-form-title">Welcome, <strong>Guest</strong>. Please <a href="http://forum.linuxmce.org/index.php?action=login">login</a> or <a href="http://forum.linuxmce.org/index.php?action=register">register</a>.</p>
+> 			</div>
+> 			
+> 			<label for="username">Username</label>
+> 			<input id="username" class="input_text" name="user" type="text" required aria-required="true" placeholder="Enter your username">
+> 			
+> 			<label for="password">Password</label>
+> 			<input id="password" class="input_password" name="passwrd" type="password" required aria-required="true" placeholder="Enter your password">
+> 			
+> 			<label for="session-length">Session Length</label>
+> 			<select id="session-length" name="cookielength">
+> 			  <option value="60">1 Hour</option>
+> 			  <option value="1440">1 Day</option>
+> 			  <option value="10080">1 Week</option>
+> 			</select>
+> 			
+> 			<button type="submit">Login</button>
+> 			
+> 			<div class="info">
+> 			  <small>Login with username, password, and session length</small>
+> 			</div>
+> 		  </form>
+> 		</div>
+> 		
+> 		<div class="news normaltext">
+> 		  <form accept-charset="UTF-8" action="http://forum.linuxmce.org/index.php?action=search2" id="search_form" method="post">
+> 			<input class="input_text" name="search" type="text" value="" placeholder="Search">
+> 			<input aria-disabled="false" class="button_submit" name="submit" role="button" type="submit" value="Search">
+> 		  </form>
+> 		</div>
+> 		
+> 	<div id="main_menu">
+> 	  <ul>
+> 		<li><a href="http://forum.linuxmce.org/index.php">Home</a></li>
+> 		<li><a href="http://forum.linuxmce.org/index.php?action=help">Help</a></li>
+> 		<li><a href="http://forum.linuxmce.org/index.php?action=search">Search</a></li>
+> 		<li><a href="http://forum.linuxmce.org/index.php?action=login">Login</a></li>
+> 		<li><a href="http://forum.linuxmce.org/index.php?action=register">Register</a></li>
+> 	  </ul>
+> 	</div>
+> 	

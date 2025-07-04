@@ -1,0 +1,22 @@
+167a168,188
+> 		<div class="row margintop40" style="display: flex; flex-direction: column; align-items: center;">
+> 			<h3 class="margintop0">La fête de la prune</h3>
+> 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="width: 80%;">
+> 				 <img alt="" class="img-responsive"
+> 					src="assets/images/12.jpg" style="width: 100%;" />
+> 				<p class="legende">Au XVI ème siècle la culture des pruniers était très importante dans la plaine. Les
+> 					fruits étaient séchés et aplatis, ressemblant à une pièce de monnaie, d'où le nom de "pistole". A
+> 					cause de la vengeance d'un seigneur local, le Duc d'Epernon, tous les arbres furent coupés.</p>
+> 			</div>
+> 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="width: 80%;">
+> 				 <img alt="" class="img-responsive" src="assets/images/13.jpg" style="width: 100%;" />
+> 				<p class="legende">Aujourd'hui afin de renouer avec cette production ancestrale, des arbres de la
+> 					variété Perdigon sont replantés. Début septembre se déroule la Fête de la Prune.</p>
+> 			</div>
+> 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="width: 80%;">
+> 				 <img alt="" class="img-responsive" src="assets/images/14.jpg" style="width: 100%;" />
+> 				<p class="legende">Défilés de confréries, intronisation de nouveaux membres, animations et danses de
+> 					groupes folkloriques,démonstrations culinaires et dégustations font revivre ces traditions.</p>
+> 			</div>
+> 		</div>
+> 		

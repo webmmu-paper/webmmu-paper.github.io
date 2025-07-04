@@ -1,0 +1,1 @@
+Add a footer to the bottom of the content with social links on the right and menu links on the left part of the footer.
