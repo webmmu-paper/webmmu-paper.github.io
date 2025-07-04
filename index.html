@@ -21,47 +21,76 @@
           <li><a href="#dataset" class="navbar-item">Dataset</a></li>
           <li><a href="#explore" class="navbar-item">Explore</a></li>
           <li><a href="#results" class="navbar-item">Results</a></li>
-          <li><a href="assets/WebMMU_2025.pdf" target="_blank" class="navbar-btn">Paper</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1 class="hero-title">WebMMU: A Multimodal, Multilingual Benchmark for Website Understanding & Code Generation</h1>
-      <div class="hero-authors" style="justify-content:center;flex-wrap:wrap;gap:0.5rem 1.2rem;">
-        <span class="author-chip"><a href="https://rabiul.me" target="_blank">Rabiul Awal</a><sup>1,2,✉</sup></span>
-        <span class="author-chip">Mahsa Massoud<sup>2</sup></span>
-        <span class="author-chip">Zichao Li<sup>2</sup></span>
-        <span class="author-chip">Aarash Feizi<sup>2</sup></span>
-        <span class="author-chip">Suyuchen Wang<sup>2</sup></span>
-        <span class="author-chip">Christopher Pal<sup>2,3</sup></span>
-        <span class="author-chip">Aishwarya Agrawal<sup>2,4</sup></span>
-        <span class="author-chip">David Vazquez<sup>2,5</sup></span>
-        <span class="author-chip">Siva Reddy<sup>1,2</sup></span>
-        <span class="author-chip">Juan A. Rodriguez<sup>2,6</sup></span>
-        <span class="author-chip">Perouz Taslakian<sup>2,7</sup></span>
-        <span class="author-chip">Spandana Gella<sup>2,8</sup></span>
-        <span class="author-chip">Sai Rajeswar<sup>2</sup></span>
+  <section class="hero hero-blend">
+    <div class="floating-circle-1"></div>
+    <div class="floating-circle-2"></div>
+    <div class="floating-circle-3"></div>
+    <div class="floating-square"></div>
+    <div class="floating-triangle"></div>
+    <div class="floating-diamond"></div>
+    <div class="floating-symbols">● ○ ◇ □</div>
+    <div class="floating-hexagon"></div>
+    <div class="floating-star"></div>
+    <div class="floating-oval"></div>
+    <div class="floating-cross"></div>
+    <div class="floating-wave"></div>
+    <div class="floating-dots">•••</div>
+    <div class="floating-arrow"></div>
+    <div class="floating-pentagon"></div>
+    <div class="container hero-flex">
+      <div class="hero-left">
+        <div class="hero-meta-badge-row">
+          <div class="hero-meta">DL4C Workshop @ ICLR 2025</div>
+          <div class="hero-multilingual-badge">🌐 First Multilingual Benchmark for Web Agents</div>
+        </div>
+        <h1 class="hero-title">
+          WebMMU: A Multimodal, Multilingual Benchmark for Website Understanding & Code Generation
+        </h1>
+        <div class="hero-authors-compact">
+          <span>Rabiul Awal<sup>🦄∗</sup></span>
+          <span>Mahsa Massoud<sup>🦄</sup></span>
+          <span>Zichao Li<sup>🦄</sup></span>
+          <span>Aarash Feizi<sup>🦄</sup></span>
+          <span>Suyuchen Wang<sup>🦄</sup></span>
+          <span>Christopher Pal<sup>🌌</sup></span>
+          <span>Aishwarya Agrawal<sup>🎓</sup></span>
+          <span>David Vazquez<sup>🦄</sup></span>
+          <span>Siva Reddy<sup>🦄</sup></span>
+          <span>Juan A. Rodriguez<sup>🏢</sup></span>
+          <span>Perouz Taslakian<sup>🦄</sup></span>
+          <span>Spandana Gella<sup>🦄</sup></span>
+          <span>Sai Rajeswar<sup>🦄</sup></span>
+        </div>
+        <div class="hero-affiliations-compact">
+          <span><sup>🦄</sup>ServiceNow</span>
+          <span><sup>🌌</sup>Mila</span>
+          <span><sup>🎓</sup>Université de Montréal</span>
+          <span><sup>🏫</sup>McGill University</span>
+          <span><sup>🏢</sup>École de Technologie Supérieure (ETS)</span>
+          <span><sup>🏗️</sup>Polytechnique Montréal</span>
+        </div>
+    
+        <div class="hero-description">
+          WebMMU is a comprehensive benchmark that evaluates AI models' ability to understand and interact with real websites. Unlike existing benchmarks that use synthetic or simplified data, WebMMU uses authentic website screenshots and real-world code, covering three critical tasks: answering complex questions about web interfaces, converting visual mockups into functional code, and making precise code edits. With 4,392+ examples across four languages and 20+ website domains, each carefully crafted by 127 professionals, WebMMU reveals genuine model limitations that simpler datasets miss. This benchmark is essential for developing AI systems that can truly understand and manipulate web content in real-world scenarios.
+        </div>
+        <div class="hero-buttons">
+          <a href="assets/WebMMU_2025.pdf" class="hero-btn">📄 Paper</a>
+          <a href="https://github.com/webmmu/webmmu" class="hero-btn">💻 Code</a>
+          <a href="https://huggingface.co/collections/mair-lab/webmmu-686777551dc5d822264e36f2" class="hero-btn">📥 Dataset</a>
+        </div>
+        <em>*Corresponding: <a href="mailto:rabiul.awal@mila.quebec">rabiul.awal at mila.quebec</a></em>
+
       </div>
-      <div class="hero-affiliations" style="text-align:center;font-size:0.98rem;color:#64748b;margin:0.7rem 0 1.5rem 0;">
-        <span><sup>1</sup>McGill University</span> &nbsp; 
-        <span><sup>2</sup>Mila Quebec</span> &nbsp; 
-        <span><sup>3</sup>Polytechnique Montréal</span> &nbsp; 
-        <span><sup>4</sup>University of Montreal</span> &nbsp; 
-        <span><sup>5</sup>Computer Vision Center, Barcelona</span> &nbsp; 
-        <span><sup>6</sup>Universidad de los Andes</span> &nbsp; 
-        <span><sup>7</sup>American University of Beirut</span> &nbsp; 
-        <span><sup>8</sup>Microsoft Research</span> &nbsp; 
-        <span><sup>✉</sup><a href="mailto:rabiul.awal@mila.quebec">Contact</a></span>
+      <div class="hero-right">
+        <img src="assets/webmmu_cover.png" alt="WebMMU Cover" class="hero-cover-image" />
       </div>
-      <div class="hero-buttons">
-        <a href="assets/WebMMU_2025.pdf" target="_blank" class="hero-btn">📄 Paper</a>
-        <a href="https://github.com/webmmu/webmmu" target="_blank" class="hero-btn secondary">💻 Code</a>
-        <a href="#dataset" class="hero-btn secondary">🔍 Dataset</a>
-      </div>
+      
     </div>
   </section>
 
@@ -71,24 +100,26 @@
         <h2 class="section-title">About</h2>
 
       <p class="section-subtitle">
-        Whether you're building smarter web agents or testing the limits of multimodal models, WebMMU is your go-to testbed.
+        WebMMU addresses a critical gap in AI evaluation: how well can models understand and manipulate real websites? Current benchmarks often use simplified or synthetic data, masking the true challenges of real-world web interaction.
       </p>
      
   
       <div class="card">
-        <p style="font-size:1.15rem;line-height:1.7;margin-bottom:2.2rem;max-width:700px;margin-left:auto;margin-right:auto;">
-          WebMMU is a large-scale, expert-annotated benchmark for evaluating AI models on real-world web understanding and code generation. It covers three core tasks—WebQA, Code Editing, and Mockup2Code—across four languages and 20+ website domains. Each example is crafted and quality-checked by professionals, ensuring challenging, diverse, and realistic scenarios. By focusing on atomic, visually-grounded tasks, WebMMU enables fine-grained diagnosis of model strengths and weaknesses in reasoning, grounding, and code manipulation.
-        </p>
+      <ul class="features-list">
+        <li></li>As AI systems increasingly interact with web interfaces, from automated testing to web development assistance, we need benchmarks that reflect real-world complexity. WebMMU fills this gap by using real-world website screenshots, real HTML/CSS/JavaScript code, and professionally crafted scenarios that mirror actual use cases. By focusing on atomic, visually-grounded tasks, WebMMU enables fine-grained diagnosis of model strengths and weaknesses in reasoning, grounding, and code manipulation.</li>
+      </ul>
         <img src="assets/WebMMU - main.png" alt="WebMMU benchmark overview" class="image image-large" />
         
         <h3 class="card-title">Key Features</h3>
         <ul class="features-list">
+          <li><strong>📊 Data Sources:</strong> Sourced from FineWeb (CommonCrawl) and heuristics for everyday actions such as popular shopping, booking appointments, travel, review websites, etc.</li>
           <li><strong>🌐 Multilingual:</strong> English, Spanish, German, French, revealing 20–40 point performance drops across languages.</li>
           <li><strong>🧩 Three Core Tasks:</strong> 
             <b>WebQA</b> (complex, visually-grounded questions), 
             <b>Mockup2Code</b> (hand-drawn to code), 
             <b>Code Editing</b> (novel, real-world code patching with functional verification).
           </li>
+          <li><strong>🖥️ Multi-panel Screenshots:</strong> Mimics browsing experience with multiple panels.</li>
           <li><strong>🖥️ Real-World Data:</strong> 20+ domains, 4,392+ examples, all expert-annotated and QA'd by 127 professionals.</li>
           <li><strong>🔍 Fine-Grained Evaluation:</strong> LLM-as-Judge and human scoring (89–91% agreement), with breakdowns by reasoning, agentic action, and code correctness.</li>
         </ul>
@@ -102,33 +133,35 @@
       <section id="tasks" class="section">
         <div class="container">
               <h2 class="section-title">Tasks</h2>
+              <p class="section-subtitle">
+                WebMMU evaluates three fundamental capabilities that AI systems need for real-world web interaction. Each task targets specific skills that are essential for building intelligent web agents and development tools.
+              </p>
           
           <div class="task-grid">
             <div class="task-card">
                 <h3>WebQA</h3>
                 <p>
-                  Answer complex, visually-grounded questions about real website screenshots. 
-                  <br><em>Example:</em> "Which button should a user click to view their order history?" or "Sum the prices of all items in the shopping cart."
-                  <br><b>Measures:</b> Reasoning, spatial grounding, and content understanding.
+                  Ability to understand and reason about website content and functionality through visual analysis.
+                  <br><br><em>Example questions:</em> "Which button should a user click to view their order history?" or "Sum the prices of all items in the shopping cart."
+                  <br><br><strong>Measures:</strong> Spatial reasoning, understanding UI hierarchy, and connecting visual elements to functionality.
                 </p>
                 </div>
             
             <div class="task-card">
                 <h3>Mockup2Code</h3>
                 <p>
-                  Translate hand-drawn or digital mockups—created by experts from real sites—into functional HTML/CSS code.
-                  <br><em>Example:</em> "Generate code for this login page sketch, preserving layout and style."
-                  <br><b>Measures:</b> Visual fidelity, code quality, and layout hierarchy.
+                  Ability to translate visual designs into functional HTML/CSS code that accurately reproduces the intended layout and styling.
+                  <br><br><em>Example:</em> "Generate code for this login page sketch, preserving layout and style."
+                  <br><br><strong>Measures:</strong> Understanding design intent, maintaining visual fidelity, and producing clean, maintainable code.
                 </p>
                 </div>
             
             <div class="task-card">
                 <h3>Code Editing</h3>
                 <p>
-                  Edit real HTML/CSS/JS code based on user instructions, with functional verification. 
-                  <br><em>Example:</em> "Add a dark mode toggle to the navbar and ensure all text remains readable."
-                  <br><b>Novelty:</b> First benchmark to evaluate fine-grained, visually-grounded code edits at scale.
-                  <br><b>Measures:</b> Correctness, functionality, and structure-preserving changes.
+                  Ability to make precise, functional modifications to existing website code based on user requirements.
+                  <br><br><em>Example:</em> "Add a dark mode toggle to the navbar and ensure all text remains readable."
+                  <br><br><strong>Measures:</strong> Understanding code structure, preserving functionality, and making targeted changes without unintended side effects.
                 </p>
             </div>
           </div>
@@ -140,10 +173,16 @@
     <div class="container">
         <h2 class="section-title">Dataset Overview</h2>
         <p class="section-subtitle">
-          Each example in WebMMU is crafted by expert annotators, with a three-stage QA process involving 127 professionals. The dataset spans e-commerce, government, blogs, and more, ensuring broad coverage and realistic challenges. This focus on quality and diversity surfaces genuine model weaknesses that simpler, synthetic datasets miss.
+          WebMMU's dataset is built with rigorous quality standards to ensure it reflects real-world complexity. 
         </p>
       
       <div class="card">
+        <h3 class="card-title">Data Collection & Quality Assurance</h3>
+        <p style="font-size:1.1rem;line-height:1.6;margin-bottom:2rem;">
+          Our dataset spans diverse real-world scenarios: e-commerce platforms, government websites, educational portals, news sites, and more. This broad coverage ensures that models are tested on the full spectrum of web interfaces they might encounter in practice.           Each example undergoes a three-stage quality assurance process involving 127 professionals.
+          Each example is authored by expert annotators with domain knowledge, then reviewed by multiple professionals to ensure accuracy and relevance.
+        </p>
+        
         <div class="table-container">
           <table class="table">
           <thead>
@@ -255,61 +294,82 @@
   <section id="hf-dataset" class="section">
     <div class="container">
       <h2 class="section-title">Explore Dataset on Hugging Face</h2>
-      <h3 class="section-subtitle">Code Editing</h3>
-      <iframe
-        src="https://huggingface.co/datasets/McGill-NLP/WebMMU/embed/viewer/code_edit/english"
-        frameborder="0"
-        width="100%"
-        height="560px"
-        style="border-radius: 8px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.04); margin-top: 1.5rem;"
-        allowfullscreen
-      ></iframe>
-      <h3 class="section-subtitle" style="margin-top:2.5rem;">Mockup2Code</h3>
-      <iframe
-        src="https://huggingface.co/datasets/McGill-NLP/WebMMU/embed/viewer/mockup2code/English"
-        frameborder="0"
-        width="100%"
-        height="560px"
-        style="border-radius: 8px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.04); margin-top: 1.5rem;"
-        allowfullscreen
-      ></iframe>
-      <h3 class="section-subtitle" style="margin-top:2.5rem;">WebQA</h3>
-      <iframe
-        src="https://huggingface.co/datasets/McGill-NLP/WebMMU/embed/viewer/web_qa/english"
-        frameborder="0"
-        width="100%"
-        height="560px"
-        style="border-radius: 8px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.04); margin-top: 1.5rem;"
-        allowfullscreen
-      ></iframe>
+      <p class="section-subtitle">
+        Browse through real samples from each task directly on Hugging Face. Each dataset contains authentic examples with expert annotations and quality assurance.
+      </p>
+      
+      <div class="tabs">
+        <button class="tab active" data-tab="codeedit-hf">Code Editing</button>
+        <button class="tab" data-tab="mockup2code-hf">Mockup2Code</button>
+        <button class="tab" data-tab="webqa-hf">WebQA</button>
       </div>
-    </section>
+      
+      <div class="tab-content active" id="codeedit-hf-content">
+        <div class="card">
+          <h3 class="card-title">Code Editing Dataset</h3>
+          <p style="font-size:1.1rem;line-height:1.6;margin-bottom:2rem;">
+            Explore real-world code editing examples where models must make precise modifications to existing HTML/CSS/JavaScript code based on user instructions.
+          </p>
+          <iframe
+            src="https://huggingface.co/datasets/McGill-NLP/WebMMU/embed/viewer/code_edit/english"
+            frameborder="0"
+            width="100%"
+            height="560px"
+            style="border-radius: 8px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.04);"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      
+      <div class="tab-content" id="mockup2code-hf-content">
+        <div class="card">
+          <h3 class="card-title">Mockup2Code Dataset</h3>
+          <p style="font-size:1.1rem;line-height:1.6;margin-bottom:2rem;">
+            Browse hand-drawn and digital mockups that models must convert into functional HTML/CSS code, testing visual-to-code translation capabilities.
+          </p>
+          <iframe
+            src="https://huggingface.co/datasets/McGill-NLP/WebMMU/embed/viewer/mockup2code/English"
+            frameborder="0"
+            width="100%"
+            height="560px"
+            style="border-radius: 8px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.04);"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      
+      <div class="tab-content" id="webqa-hf-content">
+        <div class="card">
+          <h3 class="card-title">WebQA Dataset</h3>
+          <p style="font-size:1.1rem;line-height:1.6;margin-bottom:2rem;">
+            Explore complex, visually-grounded questions about real website screenshots, testing models' ability to understand and reason about web interfaces.
+          </p>
+          <iframe
+            src="https://huggingface.co/datasets/McGill-NLP/WebMMU/embed/viewer/web_qa/english"
+            frameborder="0"
+            width="100%"
+            height="560px"
+            style="border-radius: 8px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.04);"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- Results Section -->
   <section id="results" class="section">
     <div class="container">
       <h2 class="section-title">Results & Key Insights</h2>
-      <p style="font-size:1.08rem;line-height:1.7;margin-bottom:2.5rem;">
-        WebMMU uses a rigorous evaluation protocol: LLM-as-Judge scoring, validated by human annotators (89–91% agreement), and automatic metrics (BLEU, TreeBLEU, visual similarity). This enables fine-grained analysis of model performance across reasoning, grounding, and code correctness. Notably, we find a strong correlation between VQA and code editing performance (r = 0.96), suggesting shared underlying skills.
+      <p class="section-subtitle">
+        WebMMU's comprehensive evaluation reveals significant gaps in current AI capabilities for real-world web interaction. Our results provide actionable insights for researchers and developers working on multimodal AI systems.
       </p>
-      <ul style="font-size:1.08rem;line-height:1.7;margin-bottom:2.5rem;">
-        <li><b>Current AI models</b> (even the best) can extract basic info, but:
-          <ul>
-            <li>Struggle with complex reasoning, UI grounding, and code edits that actually work.</li>
-            <li>Multilingual performance drops sharply outside English.</li>
-          </ul>
-        </li>
-        <li><b>WebQA:</b> Most models <b>score below 50%</b> on reasoning; <b>agentic action</b> (UI navigation) is hardest (<b>&lt;10% accuracy</b>).</li>
-        <li><b>Mockup2Code:</b> Proprietary models do well on simple layouts (score &gt;4/5), but <b>all models fail on complex/nested UIs</b>.</li>
-        <li><b>Code Editing:</b> No model reliably produces correct, ready-to-use code edits—<b>manual fixes are still needed</b>.</li>
-        <li><b>Why?</b> Models fail at spatial reasoning, multi-step logic, and precise UI element localization. Multilingual and cross-domain generalization remain major challenges.</li>
-      </ul>
-      <blockquote style="font-size:1.1rem;color:#334155;border-left:4px solid #3b82f6;padding-left:1.2rem;margin:1.5rem 0;">
-        <b>Bottom line:</b> Even top models can't yet automate real-world web development.<br>
-        <b>Future progress needs:</b> Better multimodal alignment, UI-aware modeling, and robust cross-lingual reasoning.
-      </blockquote>
-
+      
+      <div class="card">        
       <h3 class="section-title" style="margin-top:3rem;">Detailed Results</h3>
+      <p style="font-size:1.08rem;line-height:1.7;margin-bottom:2rem;">
+        WebMMU uses a rigorous evaluation protocol combining LLM-as-Judge scoring (validated by human annotators with 89–91% agreement) and automatic metrics (BLEU, TreeBLEU, visual similarity). This multi-faceted approach enables fine-grained analysis of model performance across reasoning, grounding, and code correctness. 
+      </p>
       <div class="tabs">
         <button class="tab active" data-tab="webqa">WebQA</button>
         <button class="tab" data-tab="mockup2code">Mockup2Code</button>
@@ -318,7 +378,7 @@
       <div class="tab-content active" id="webqa-content">
         <div class="card">
           <h3 class="card-title">Web VQA Performance</h3>
-          <p class="results-summary">WebQA evaluates models on their ability to answer questions about real website screenshots across three categories: 🧠 Reasoning, ⚙️ Agentic UI Actions, and 🔎 Content Understanding. Most models struggle with complex reasoning and agentic UI actions, especially outside English.</p>
+          <p class="results-summary">WebQA evaluates models on their ability to answer questions about real website screenshots across three categories: 🧠 Reasoning (complex logical thinking), ⚙️ Agentic UI Actions (navigation and interaction), and 🔎 Content Understanding (basic information extraction). Most models struggle with complex reasoning and agentic UI actions, especially outside English.</p>
           <p>Model accuracy (%) by question type and language. Best and runner-up models per size category are <strong>bold</strong> and <u>underlined</u>.</p>
           <div class="table-container">
             <table class="table">
@@ -399,19 +459,45 @@
       <div class="tab-content" id="mockup2code-content">
         <div class="card">
           <h3 class="card-title">Mockup2Code Results</h3>
-          <p class="results-summary">Mockup2Code evaluates how well models can generate HTML/CSS code from hand-drawn or digital web mockups. Models are scored on a 1-5 scale for both visual similarity and code quality. While proprietary models perform well on simple layouts, all models struggle with complex or deeply nested UI structures.</p>
+          <p class="results-summary">Mockup2Code evaluates how well models can generate HTML/CSS code from hand-drawn or digital web mockups. Models are scored on a 1-5 scale for both visual similarity (how well the generated code matches the visual design) and code quality (cleanliness, maintainability, and best practices). While proprietary models perform well on simple layouts, all models struggle with complex or deeply nested UI structures.</p>
           <img src="assets/mockup2sketch_results.png" alt="Mockup2Code performance results" class="image image-large" />
         </div>
       </div>
       <div class="tab-content" id="codeedit-content">
         <div class="card">
           <h3 class="card-title">Code Editing Results</h3>
-          <p class="results-summary">Code Editing tests whether models can make precise, functional changes to real website code based on user instructions. Models are evaluated on correctness and functionality of their code modifications. Despite advances, no model reliably produces correct, ready-to-use code edits—manual fixes are still required for production use.</p>
+          <p class="results-summary">Code Editing tests whether models can make precise, functional changes to real website code based on user instructions. Models are evaluated on correctness (does the code work as intended?) and functionality (does it preserve existing features?). Despite advances in code generation, no model reliably produces correct, ready-to-use code edits—manual fixes are still required for production use.</p>
           <img src="assets/code-edits-performance.png" alt="Code editing performance results" class="image image-large" />
         </div>
       </div>
       </div>
+
+      <h3 class="card-title">Key Insights</h3>
+      <div style="font-size:1.08rem;line-height:1.7;margin-bottom:2.5rem;">
+        <p><strong>Grounding Is the Hardest, Reasoning Comes Next, General Understanding Is the Easiest</strong></p>
+        <p>WebMMU shows a clear difficulty gap across tasks. Most models handle basic visual understanding (like reading labels and identifying images) fairly well. They do worse at multi-step reasoning, such as performing calculations or combining information from different parts of a web page. But the hardest challenge is grounding — identifying the exact location of elements on a page and reasoning about user actions (e.g., where to click). For example, while many models could list navigation categories correctly, few could pinpoint where to click to open the "About Us" page, with grounding accuracy often falling below 10%. This reflects a gap between recognizing content and understanding how users interact with it.</p>
+        
+
+        <p><strong>Simple Layouts Are Fine, But Complex UI Hierarchies Break the Models</strong></p>
+        <p>When turning design mockups into HTML/CSS code, most models succeed on simple, flat layouts. But as soon as mockups include nested sections, multi-column layouts, or complex styling, the models break down. They often flatten the hierarchy, misalign elements, or miss relationships between components. For example, while they can correctly generate a basic "Contact Us" page, they struggle with a product page featuring sidebars, filters, and product grids. This suggests current models understand basic page layouts but lack deeper comprehension of modern, structured web design.</p>
+        
+        <p><strong>Code Editing: Models Generate Edits, But Risk Breaking the Site</strong></p>
+        <p>In code editing tasks, models can follow instructions like "Add a header with search and post buttons," but often produce edits that break the site's structure or behavior. While the syntax of their HTML/CSS/JavaScript is mostly correct, they miss subtle dependencies, like class names or JavaScript functions, that keep the page functional. Even top models cannot yet generate reliable, ready-to-deploy code patches. This makes human review essential for all but the simplest edits.</p>
+        
+        <p><strong>Open-Source Models Lag Behind Closed-Source Models, Especially on Complex Tasks</strong></p>
+        <p>Across all tasks, closed-source models like Gemini 2.0 Flash and Claude 3.5 consistently outperform open-source alternatives. They show better grounding, more accurate reasoning, and higher-quality code generation. For example, in the mockup-to-code task, closed-source models score above 4 out of 5 on simple layouts, while open-source models often struggle to score above 3. However, even the best models — closed or open — fail on complex designs, especially with nested layouts and precise spacing. Open-source models also suffer from greater multilingual performance drops, highlighting the training and resource gap between the two categories.</p>
+        
+        <p><strong>Multilingual Tasks Expose Major Gaps in Cross-Lingual Generalization</strong></p>
+        <p>WebMMU covers English, Spanish, German, and French. Across all tasks, performance in non-English languages drops significantly — sometimes by more than half. Grounding and reasoning suffer most in these languages. This reveals that despite large training datasets, models haven't yet learned to generalize well to multilingual websites, which often have layout and content differences across languages.</p>
+        
+        <p><strong>The Big Picture: Real-World Web Automation Remains a Challenge</strong></p>
+        <p>WebMMU shows that while AI models are progressing, they remain far from automating real-world web development. They can extract basic information and generate simple UI code, but they struggle with reasoning, structured code generation, precise edits, and multilingual scenarios. Closing this gap will require better multimodal reasoning, web-specific model architectures, and stronger cross-lingual capabilities — essential steps toward building truly intelligent web automation agents.</p>
+      </div>
+
+    </div>
     </section>
+
+
 
     <!-- BibTeX Section -->
   <section class="section">
