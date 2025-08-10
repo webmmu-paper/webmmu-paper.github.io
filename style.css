@@ -1264,6 +1264,22 @@ body {
     gap: 0.3rem 0.5rem !important;
     margin-bottom: 0.5rem;
   }
+  
+  .author-group {
+    gap: 0.2rem 0.6rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .shared-authorship {
+    font-size: 0.8rem;
+    padding: 0.08em 0.5em;
+  }
+  
+  .hero-authorship-legend {
+    gap: 0.2rem 0.8rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+  }
   .author-chip {
     font-size: 0.92rem;
     padding: 0.3rem 0.7rem;
@@ -1320,6 +1336,26 @@ body {
   font-weight: 400;
 }
 
+.author-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.shared-authorship {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-style: italic;
+  font-weight: 400;
+  background: rgba(100, 116, 139, 0.08);
+  border-radius: 0.8em;
+  padding: 0.1em 0.6em;
+  margin-left: 0.2rem;
+  white-space: nowrap;
+}
+
 .hero-affiliations-compact {
   display: flex;
   flex-wrap: wrap;
@@ -1343,6 +1379,31 @@ body {
 .hero-affiliations-compact sup {
   font-size: 1em;
   margin-right: 0.3em;
+}
+
+.hero-authorship-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.2rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-authorship-legend span {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.hero-authorship-legend sup {
+  font-size: 0.9em;
+  margin-right: 0.2em;
+  font-weight: 500;
 }
 
 .hero-buttons > a {
